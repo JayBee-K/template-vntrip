@@ -215,4 +215,21 @@ $(function () {
 
 	handleContentDetail();
 
+	if ($('#slider-hero').length) {
+		const elmSwiper = '#slider-hero';
+		const objSwiper = {
+			speed: 1000,
+			autoplay: {
+				delay: 8000,
+				disableOnInteraction: true,
+			},
+			loop: true,
+			slidesPerView: 1,
+			navigation: {
+				nextEl: elmSwiper + " .slider-navigation .slider-navigation_next",
+				prevEl: elmSwiper + " .slider-navigation .slider-navigation_prev",
+			},
+		}
+		handleSwiper(elmSwiper + ' .swiper', objSwiper)
+	}
 });

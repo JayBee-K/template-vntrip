@@ -32,22 +32,148 @@
 
 	<style>
 		:root {
-			--primary-color: #00908e;
-			--primary-hover: #007a78;
-			--primary-rgb: 0, 144, 142;
-			--secondary-color: #db0008;
-			--secondary-hover: #bb0006;
-			--secondary-rgb: 219, 0, 8;
+			--primary-color: #ff5b02;
+			--primary-hover: #e35000;
+			--primary-rgb: 255, 91, 2;
+			--secondary-color: #0858a9;
+			--secondary-hover: #10559a;
+			--secondary-rgb: 8, 88, 169;
 		}
 	</style>
 </head>
 <body>
 
 <div id="header" class="header">
+	<div class="header-top">
+		<div class="container">
+			<div class="header-grid hstack gap-15px align-items-center">
+				<div class="header-logo">
+					<a href="" class="d-inline-flex align-middle">
+						<img src="./assets/images/logo.png" class="img-fluid" alt="">
+					</a>
+				</div>
+				<div class="header-toolbar hstack gap-30px align-items-center ms-auto">
+					<div class="toolbar-item position-relative">
+						<a href="" class="toolbar-item_btn hstack align-items-center gap-5px fw-semibold">
+							<i class="fas fa-search"></i>
+							Tra cứu đơn hàng
+						</a>
+					</div>
+					<div class="toolbar-item position-relative">
+						<a href=""
+						   class="toolbar-item_btn toolbar-item_btn__highlight hstack align-items-center gap-5px fw-semibold">
+							<i class="fas fa-phone-volume fa-rotate"></i>
+							Hotline
+						</a>
+						<div class="toolbar-item_dropdown">
+							<a href="" class="toolbar-item_dropdown__item">
+								<span>
+									<i class="fas fa-building"></i>
+									Phòng:
+								</span>
+								0909 909 909
+							</a>
+							<a href="" class="toolbar-item_dropdown__item">
+								<span>
+									<i class="fas fa-plane"></i>
+									Vé:
+								</span>
+								0909 909 909
+							</a>
+						</div>
+					</div>
+					<div class="toolbar-item position-relative">
+						<a href=""
+						   class="toolbar-item_btn hstack align-items-center gap-5px fw-semibold">
+							<i class="far fa-usd-circle"></i>
+							VND
+						</a>
+						<div class="toolbar-item_dropdown toolbar-item_dropdown__language">
+							<a href="" class="toolbar-item_dropdown__item active">
+								Việt Nam Đồng (VND)
+							</a>
+							<a href="" class="toolbar-item_dropdown__item">
+								US Dollar (USD)
+							</a>
+							<a href="" class="toolbar-item_dropdown__item">
+								Nhân dân tệ (CNY)
+							</a>
+						</div>
+					</div>
+					<div class="toolbar-item position-relative">
+						<a href=""
+						   class="toolbar-item_btn hstack align-items-center gap-5px fw-semibold">
+							<img src="./assets/images/language/vn.png" class="img-fluid" alt="">
+							Tiếng Việt
+						</a>
+						<div class="toolbar-item_dropdown toolbar-item_dropdown__language">
+							<a href="" class="toolbar-item_dropdown__item active">
+								<img src="./assets/images/language/vn.png" class="img-fluid" alt="">
+								Tiếng Việt
+							</a>
+							<a href="" class="toolbar-item_dropdown__item">
+								<img src="./assets/images/language/en.png" class="img-fluid" alt="">
+								English
+							</a>
+							<a href="" class="toolbar-item_dropdown__item">
+								<img src="./assets/images/language/cn.png" class="img-fluid" alt="">
+								简体中文
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="header-user hstack gap-10px align-items-center">
+					<div class="header-user_item">
+						<a href=""
+						   class="d-inline-flex align-middle button-theme button-theme_primary__outline">
+							<i class="fas fa-sign-in-alt"></i>Đăng nhập
+						</a>
+					</div>
+					<div class="header-user_item">
+						<a href=""
+						   class="d-inline-flex align-middle button-theme button-theme_primary">
+							<i class="fas fa-user-plus"></i>Đăng ký
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="header-overlay" id="header-overlay"></div>
 </div>
 
 <div id="main" class="main">
+	<div class="section-hero">
+		<div class="slider-theme position-relative" id="slider-hero">
+			<div class="swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="hero-item">
+							<img src="./assets/images/hero/1-1920x400.png" class="img-fluid" alt="">
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="hero-item">
+							<img src="./assets/images/hero/2-1920x400.png" class="img-fluid" alt="">
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="hero-item">
+							<img src="./assets/images/hero/3-1920x400.png" class="img-fluid" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slider-navigation">
+				<div class="slider-navigation_button slider-navigation_prev">
+					<i class="fal fa-chevron-left"></i>
+				</div>
+				<div class="slider-navigation_button slider-navigation_next">
+					<i class="fal fa-chevron-right"></i>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <footer id="footer" class="footer">

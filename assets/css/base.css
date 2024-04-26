@@ -2,6 +2,8 @@
 	--transition-default: 0.3s all ease-in-out;
 	--font-theme: 'Mulish', Arial, Helvetica, sans-serif;
 	--size-theme: 14px;
+	--text-color: #121212;
+	--desc-color: #767676;
 }
 
 body {
@@ -325,4 +327,75 @@ input[type='number'] {
 
 .mw-100px {
 	min-width: 100px !important;
+}
+
+.button-theme {
+	padding: 8px 15px;
+	font-weight: 700;
+	border-radius: 4px;
+	gap: 6px;
+	font-size: 1em;
+	border: 1px solid rgba(0, 0, 0, .05);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	vertical-align: middle;
+	outline: none;
+	box-shadow: none;
+	transition: var(--transition-default);
+	white-space: nowrap;
+	position: relative;
+}
+
+.button-theme.button-theme_primary {
+	background: var(--primary-color);
+	color: var(--bs-white);
+}
+
+.button-theme.button-theme_primary:hover {
+	background: var(--primary-hover);
+	color: var(--bs-white);
+}
+
+.button-theme.button-theme_secondary {
+	background: var(--secondary-color);
+	color: var(--bs-white);
+}
+
+.button-theme.button-theme_secondary:hover {
+	background: var(--secondary-hover);
+	color: var(--bs-white);
+}
+
+.button-theme.button-theme_primary__outline {
+	border: 1px solid var(--primary-color);
+	background: transparent;
+	color: var(--primary-color);
+}
+
+.button-theme.button-theme_primary__outline:hover {
+	background: var(--primary-color);
+	color: var(--bs-white);
+}
+
+.button-theme.button-theme_primary__transparent {
+	border: 1px solid transparent;
+	background: transparent;
+	color: var(--primary-color);
+}
+
+.button-theme.button-theme_primary__transparent:hover {
+	background: var(--primary-color);
+	color: var(--bs-white);
+}
+
+.button-theme.button-theme_dark {
+	background: var(--bs-secondary);
+	color: var(--bs-white);
+}
+
+.button-theme.button-theme_dark:hover {
+	background: #53595d;
+	color: var(--bs-white);
 }
